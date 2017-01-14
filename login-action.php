@@ -29,9 +29,9 @@ if ($valido) {
     if ($riga = mysqli_fetch_assoc($risultato)) {
       $_SESSION["id_utente"] = $riga["id"];
       $_SESSION["username"] = $riga["username"];
-      header("Location : area-riservata.php");
+      header("Location: area-riservata.php");
     } else{
-      header("Location : login.php");
+      header("Location: login.php");
     }
 }
 
